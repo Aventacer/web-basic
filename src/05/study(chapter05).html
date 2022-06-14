@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study</title>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="username">아이디</label>
+            <input type="text" id="username" value="jw" placeholder="아이디" autofocus required>
+        </div>
+        <div>
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" placeholder="비밀번호" readonly>
+        </div>
+        <div>
+            <input type="checkbox" id="chk1">
+            <label for="chk1">축구</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chk2">
+            <label for="chk2">농구</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chk3">
+            <label for="chk3">야구</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk1" name="sports">
+            <label for="r-chk1">축구</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk2" name="sports">
+            <label for="r-chk2">농구</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk3" name="sports">
+            <label for="r-chk3">야구</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk1" name="sports2">
+            <label for="r-chk1">축구2</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk2" name="sports2">
+            <label for="r-chk2">농구2</label>
+        </div>
+        <div>
+            <input type="radio" id="r-chk3" name="sports2">
+            <label for="r-chk3">야구2</label>
+        </div>
+        <div>
+            <label for="num1">수량: </label>
+            <input type="number" id="num1">
+        </div>
+        <div>
+            <label for="volume1">소리크기: </label>
+            <input type="range" id="volume1" min="0" max="100" step="10" oninput="document.getElementById('value2').innerHTML=this.value;">
+            <span id="value2"></span>
+        </div>
+        <div>
+            <label for="volume2">소리크기2: </label>
+            <input type="range" id="volume2" min="0" max="100" step="10" >
+            <label class="value"></label>
+        </div>
+        <div>
+            <label for="">첨부파일</label>
+            <input type="file">
+        </div>
+        <div>
+            <input type="hidden" name="v" value="hidden-value">
+            <input type="hidden" name="flag" value="1">
+        </div>
+        <div>
+            <label for="info">자기소개</label>
+            <textarea name="" id="info" cols="30" rows="10"></textarea>
+        </div>
+        <pre>asdfasdfa
+asdfasdfasdfasdf
+asdfasdfasadfasdfasdf
+        </pre>
+
+        <div>
+            <label for="select">선택 : </label>
+            <select name="" id="select">
+                <optgroup label="opt1">
+                    <option value="val-1">val-1 내용</option>
+                    <option value="val-2">val-2 내용</option>
+                    <option value="val-3" selected>val-3 내용</option>
+                </optgroup>
+                <optgroup label="opt2">
+                    <option value="VVal-4">Vval-4 내용</option>
+                    <option value="VVal-5">Vval-5 내용</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <input type="text" list="list1">
+            <datalist id="list1">
+                <option value="gildong">홍길동</option>
+                <option value="chulsoo">김철수</option>
+                <option value="yooreee">박유리</option>
+            </datalist>    
+        </div>
+
+        <div>
+            <label for="datalist">데이터 목록: </label>
+            <input type="text" list="dataList-id">
+            <datalist id="dataList-id">
+                <option value="value1">1</option>
+                <option value="value2">2</option>
+                <option value="value3">3</option>
+            </datalist>
+        </div>
+        <div>
+            <input type="submit" value="전송1">
+            <button type="submit">전송2</button>
+            <button>버튼</button>
+            <input type="button" name="" id="">
+        </div>
+
+
+
+
+    </form>
+    <script>
+        const _volume = document.querySelector("#volume2");
+        const _value = document.querySelector(".value");
+        _volume.onchange = () => {
+            _value.textContent = _volume.value
+        }
+    </script>
+</body>
+
+</html>

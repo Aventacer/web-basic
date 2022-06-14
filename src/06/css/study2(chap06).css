@@ -1,0 +1,35 @@
+/* 전체 선택자 */
+* {
+    font-size: 30px;
+}
+/* 타입(태그명)선택자 */
+span {
+    color: red ;
+}
+/* ID선택자 */
+#sbject{
+    color: blue;
+}
+/* 클래스선택자 */
+.content{
+    color: green !important;
+}
+/* 캐스캐이딩 */
+/* 클래스선택자 */
+.content{
+    color: blueviolet;
+}
+
+/* 그룹선택자 */
+/* h1, p {
+
+} */
+
+.info-ip{
+    color: darkorange;
+}
+
+.font-8{
+    color: blue;
+    font-size: 12px;
+}
